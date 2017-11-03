@@ -10,6 +10,7 @@ class Member():
         print('Name: {} \n Age: {}'.format(self.name, self.age))
 
 class Teacher(Member):
+    # if we haven't definied a __init__ in a sub, python will use the one from the parent
     def __init__(self, name, age, salary):
         Member.__init__(self, name, age)
         self.salary = salary
@@ -20,6 +21,7 @@ class Teacher(Member):
         print('Salary: {}'.format(self.salary))
 
 class Student(Member):
+    # if we haven't defined a __init__ in a sub, python will use the one from the parent
     def __init__(self, name, age, marks):
         Member.__init__(self, name, age)
         self.marks = marks
