@@ -19,7 +19,7 @@ Example: the "1" bin has the following winning outcomes "1", "Split 1-2",
 Collects __Outcome__ s into appropiate bins
 Used by __Game__ to select the next set of winning __Outcome__ s
 
-#### Table
+### Table
 #### Responsibilities
 Collection of bets in __Outcome__ s by __Player__.
 This isolates the set of possible bets and manages the amount currently at risk
@@ -28,3 +28,10 @@ Interface between __Player__ and other aspects of the game
 #### Collaborators
 Collects __Outcome__ s
 Used by Player to select a certain __Outcome__ to bet on
+Used by __Game__ to compute the amount that was won from the bet
+
+### Player
+#### Responsiblities
+Places bets on __Outcome__ s. Updates the stakes with amounts that were won or lost
+#### Collaborators
+Uses __Table__ to place bets on __Outcome__ s. Used by __Game__ to record wins
