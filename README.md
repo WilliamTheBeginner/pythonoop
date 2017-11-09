@@ -34,4 +34,16 @@ Used by __Game__ to compute the amount that was won from the bet
 #### Responsiblities
 Places bets on __Outcome__ s. Updates the stakes with amounts that were won or lost
 #### Collaborators
-Uses __Table__ to place bets on __Outcome__ s. Used by __Game__ to record wins
+Uses __Table__ to place bets on __Outcome__ s. Used by __Game__ to record wins  
+
+### Game
+#### Responsiblities
+Runs the game, get bets from __Player__, spins __Wheel__ give winning and collect losing amounts.
+Encapsulation of a basic sequence of play
+#### Collaborators
+Uses __Table__, __Wheel__, __Outcome__, __Player__. Basic encapsulation of classes to
+simualate play. Collects the stake at the end of the simulation, after a finite number
+of games.
+
+##### Player is the most important class in our simulation because we expect to update it to place different types of bets
+##### Therefore, the player class most be cleanly encapsulated to prevent ripple effect.
