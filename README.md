@@ -21,3 +21,10 @@ Used by __Game__ to select the next set of winning __Outcome__ s
 
 #### Table
 #### Responsibilities
+Collection of bets in __Outcome__ s by __Player__.
+This isolates the set of possible bets and manages the amount currently at risk
+for each bet.
+Interface between __Player__ and other aspects of the game
+#### Collaborators
+Collects __Outcome__ s
+Used by Player to select a certain __Outcome__ to bet on
