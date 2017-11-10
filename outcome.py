@@ -1,6 +1,5 @@
 class Outcome:
     set1 = []
-
     def __init__(self, name, odds):
         self.name = name
         self.odds = odds
