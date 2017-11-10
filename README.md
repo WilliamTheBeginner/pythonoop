@@ -1,4 +1,4 @@
-# pythonoop
+# Classes in Roulette
 ## These are the classes that will be used
 ### Outcome
 #### Responsibilities
