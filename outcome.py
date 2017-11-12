@@ -1,13 +1,15 @@
 class Outcome:
-    set1 = []
     def __init__(self, name, odds):
         self.name = name
         self.odds = odds
-        set1.insert(self)
+
     def __eq__(self, other):
         return self.name == other.name and self.odds == other.odds
+
     def __hash__(self):
         return hash((self.name, self.odds))
+
+
 oc1 = Outcome('Red', 1)
 oc2 = Outcome('Red', 1)
 oc3 = Outcome('Black', 1)
