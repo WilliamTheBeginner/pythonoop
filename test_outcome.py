@@ -1,15 +1,15 @@
 # write test_ and what you're testing
 import unittest
-import outcome
+from outcome import Outcome
 
 
-def add(x, y):
-    return x + y
+class TestOutcome(unittest.TestCase):
 
-
-class Testadd(unittest.TestCase):
     def test(self):
-        self.assertEqual(add(1, 3), 3)
+        oc1 = Outcome('Red', 1)
+        oc2 = Outcome('Red', 1)
+
+        self.assertEqual(oc1.__hash__(), oc2.__hash__())
 
 
 if __name__ == '__main__':
