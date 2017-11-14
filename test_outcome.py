@@ -6,10 +6,10 @@ from outcome import Outcome
 class TestOutcome(unittest.TestCase):
 
     def test(self):
-        oc1 = Outcome('Red', 1)
-        oc2 = Outcome('Red', 1)
+        oc1 = Outcome('1', 35)
+        oc2 = Outcome('1', 17)
 
-        self.assertEqual(oc1.__hash__(), oc2.__hash__())
+        self.assertEqual(oc1, oc2)
 
 
 if __name__ == '__main__':
