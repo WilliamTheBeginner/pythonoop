@@ -14,12 +14,23 @@ class Outcome:
         return hash((self.name, self.odds))
 
     def winAmount(self, amount):
-        self.odds * self.amount
+        return self.odds * self.amount
 
     def __str__(self):
-        pass
+        return 'Outcome: {}({}:1)'.format(self.name, self.odds)
 
     def __repr__(self):
         pass
-    
-oc1 = Outcome('1', )
+
+from os.path import join
+
+class FileObject:
+    '''Wrapper for file objects to make sure the file gets closed on deletion.'''
+
+    def __init__(self, filepath='~', filename='sample.txt'):
+        # open a file filename in filepath in read and write mode
+        self.file = open(join(filepath, filename), 'r+')
+
+    def __del__(self):
+        self.file.close()
+        del self.file
