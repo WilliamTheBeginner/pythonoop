@@ -20,4 +20,4 @@ class Outcome:
         return 'Outcome: {}({}:1)'.format(self.name, self.odds)
 
     def __repr__(self):
-        return 'Outcome: {}({}:1)'.format(self.name, self.odds)
+        return 'Outcome({}, {}) {}'.format(self.name, self.odds, self.__hash__())
