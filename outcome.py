@@ -17,7 +17,7 @@ class Outcome:
         return self.odds * amount
 
     def __str__(self):
-        return 'Outcome: {}({}:1)'.format(self.name, self.odds)
+        return "{name:s} ({odds:d}:1)".format_map(vars(self))
 
     def __repr__(self):
-        return 'Outcome({}, {}) {}'.format(self.name, self.odds, self.__hash__())
+        return "{class_:s}({name!r}, {odds!r})".format(class_=type(self).__name__, **vars(self))
