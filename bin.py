@@ -28,18 +28,21 @@ split25 = Outcome('Split 2-5', 17)
 split36 = Outcome('Split 3-6', 17)
 split45 = Outcome('Split 4-5', 17)
 
-street123 = Outcome('Straight 1-2-3', 11)
+street123 = Outcome('Street 1-2-3', 11)
+street456 = Outcome('Street 4-5-6', 11)
 
 corner1245 = Outcome('Corner 1-2-4-5', 8)
 corner2356 = Outcome('Corner 2-3-5-6', 8)
+corner4578 = Outcome('Corner 4-5-7-8', 8)
 
 five = Outcome('00-0-1-2-3', 6)
 
 line123456 = Outcome('Line 1-2-3-4-5-6', 5)
+line456789 = Outcome('Line 4-5-6-7-8-9', 5)
 
 zero = Bin([Outcome('0', 35), five])
 zerozero = Bin([Outcome('00', 35), five])
 one = Bin([Outcome('1', 35), red, low, odd, dozen_1, column_1, split12, split14, street123, corner1245, five, line123456])
 two = Bin([Outcome('2', 35), black, low, even, dozen_1, column_1, split12, split23, split25, street123, corner1245, corner2356, five, line123456])
 three = Bin([Outcome('3', 35), red, low, odd, dozen_1, column_1, split23, split36, street123, corner2356, five, line123456])
-four = Bin([Outcome('4', 35), black, low, even, dozen_1, column_1, split14, ])
+four = Bin([Outcome('4', 35), black, low, even, dozen_1, column_1, split14, split45, street456, corner1245, corner4578, line123456, ])
