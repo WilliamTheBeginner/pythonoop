@@ -11,10 +11,10 @@ class Outcome:
         return self.name != other.name
 
     def __hash__(self):
-        return hash((self.name, self.odds))
+        return hash((self.name))
 
     def winAmount(self, amount):
-        return self.odds * self.amount
+        return self.odds * amount
 
     def __str__(self):
         return 'Outcome: {}({}:1)'.format(self.name, self.odds)
