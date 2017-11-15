@@ -49,7 +49,7 @@ __Table__ contains __Bet__ amounts
 Runs the game, get bets from __Player__, spins __Wheel__ give winning and collect losing amounts.
 Encapsulation of a basic sequence of play
 notify __player__ of winning
-Uses __outcomes__ to compute amounts. 
+Uses __outcomes__ to compute amounts.
 #### Collaborators
 Uses __Table__, __Wheel__, __Outcome__, __Player__. Basic encapsulation of classes to
 simualate play. Collects the stake at the end of the simulation, after a finite number
@@ -67,6 +67,10 @@ __Bet__ s are created by __Player__
 Amt paired with __Outcome__.
 Bets are collected by __Table__.
 Bets are created by __Player__.
+
+### Bin
+#### Responsibilities
+Carries Individual __Outcome__ s for each particular bin. Uses a frozenset.
 
 ##### Player is the most important class in our simulation because we expect to update it to place different types of bets
 ##### Therefore, the player class most be cleanly encapsulated to prevent ripple effect.
