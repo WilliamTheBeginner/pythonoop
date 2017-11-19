@@ -44,11 +44,38 @@ split1013 = Outcome('Split 10-13', 17)
 split1112 = Outcome('Split 11-12', 17)
 split1114 = Outcome('Split 11-14', 17)
 split1215 = Outcome('Split 12-15', 17)
+split1314 = Outcome('Split 13-14', 17)
+split1316 = Outcome('Split 13-16', 17)
+split1415 = Outcome('Split 14-15', 17)
+split1417 = Outcome('Split 14-17', 17)
+split1518 = Outcome('Split 15-18', 17)
+split1617 = Outcome('Split 16-17', 17)
+split1619 = Outcome('Split 16-19', 17)
+split1718 = Outcome('Split 17-18', 17)
+split1720 = Outcome('Split 17-20', 17)
+split1821 = Outcome('Split 18-21', 17)
+split1920 = Outcome('Split 19-20', 17)
+split1922 = Outcome('Split 19-22', 17)
+split2021 = Outcome('Split 20-21', 17)
+split2023 = Outcome('Split 20-23', 17)
+split2124 = Outcome('Split 21-24', 17)
+split2223 = Outcome('Split 22-23', 17)
+split2225 = Outcome('Split 22-25', 17)
+split2324 = Outcome('Split 23-24', 17)
+split2326 = Outcome('Split 23-26', 17)
+split2427 = Outcome('Split 24-27', 17)
+split2526 = Outcome('Split 25-26', 17)
+split2528 = Outcome('Split 25-28', 17)
 
 street123 = Outcome('Street 1-2-3', 11)
 street456 = Outcome('Street 4-5-6', 11)
 street789 = Outcome('Street 7-8-9', 11)
 street101112 = Outcome('Street 10-11-12', 11)
+street131415 = Outcome('Street 13-14-15', 11)
+street161718 = Outcome('Street 16-17-18', 11)
+street192021 = Outcome('Street 19-20-21', 11)
+street222324 = Outcome('Street 22-23-24', 11)
+
 
 corner1245 = Outcome('Corner 1-2-4-5', 8)
 corner2356 = Outcome('Corner 2-3-5-6', 8)
@@ -58,6 +85,14 @@ corner781011 = Outcome('Corner 7-8-10-11', 8)
 corner891112 = Outcome('Corner 8-9-11-12', 8)
 corner10111314 = Outcome('Corner 10-11-13-14', 8)
 corner11121415 = Outcome('Corner 11-12-14-15', 8)
+corner13141617 = Outcome('Corner 13-14-16-17', 8)
+corner14151718 = Outcome('Corner 14-15-17-18', 8)
+corner16171920 = Outcome('Corner 16-17-19-20', 8)
+corner17182021 = Outcome('Corner 17-18-20-21', 8)
+corner19202223 = Outcome('Corner 19-20-22-23', 8)
+corner20212324 = Outcome('Corner 20-21-23-24', 8)
+corner22232526 = Outcome('Corner 22-23-25-26', 8)
+corner23242627 = Outcome('Corner 23-24-26-27', 8)
 
 five = Outcome('00-0-1-2-3', 6)
 
@@ -65,6 +100,10 @@ line123456 = Outcome('Line 1-2-3-4-5-6', 5)
 line456789 = Outcome('Line 4-5-6-7-8-9', 5)
 line789101112 = Outcome('Line 7-8-9-10-11', 5)
 line101112131415 = Outcome('Line 10-11-12-13-14-15', 5)
+line131415161718 = Outcome('Line 13-14-15-16-17-18', 5)
+line161718192021 = Outcome('Line 16-17-18-19-20-21', 5)
+line192021222324 = Outcome('Line 19-20-21-22-23-24', 5)
+line222324252627 = Outcome('Line 22-23-24-25-26-27', 5)
 
 zero = Bin([Outcome('0', 35), five])
 zerozero = Bin([Outcome('00', 35), five])
@@ -92,7 +131,8 @@ eleven = Bin([Outcome('11', 35), black, low, odd, dozen_1, column_2, split811, s
               street101112, corner781011, corner10111314, corner891112, corner11121415, line789101112, line101112131415])
 twelve = Bin([Outcome('12', 35), red, low, even, dozen_1, column_3, split912, split1112,
               split1215, street101112, corner891112, corner11121415, line789101112, line101112131415])
-thirteen = Bin([Outcome('13' 35), black, low, odd, dozen_2, column_1, split1013, split1314, split1316, street131415, corner10111314, corner13141617, line1011121314, line131415161718])
+thirteen = Bin([Outcome('13', 35), black, low, odd, dozen_2, column_1, split1013, split1314,
+                split1316, street131415, corner10111314, corner13141617, line101112131415, line131415161718])
 fourteen = Bin([Outcome('14', 35), red, low, even, dozen_2, column_2, split1314, split1114, split1415, split1417,
                 street131415, corner10111314, corner11121415, corner14151718, corner13141617, line101112131415, line131415161718])
 fifteen = Bin([Outcome('15', 35), black, low, odd, dozen_2, column_3, split1215, split1415,
@@ -108,7 +148,7 @@ nineteen = Bin([Outcome('19', 35), black, high, odd, dozen_2, column_1, split161
 twenty = Bin([Outcome('20', 35), black, high, even, dozen_2, column_2, split1920, split1720, split2021, split2023,
               corner16171920, corner17182021, corner20212324, corner19202223, street192021, line161718192021, line192021222324])
 twenty_one = Bin([Outcome('21', 35), red, high, odd, dozen_2, column_3, split1821, split2021,
-                  split2124, street192021, corner17182021, corner20212324, line161718192021, line1920222324])
+                  split2124, street192021, corner17182021, corner20212324, line161718192021, line192021222324])
 twenty_two = Bin([Outcome('22', 35), black, high, even, dozen_2, column_1, split1922, split2223,
                   split2225, street222324, corner19202223, corner22232526, line192021222324, line222324252627])
 twenty_three = Bin([Outcome('23', 35), red, high, odd, dozen_2, column_2, split2023, split2223, split2324, split2326,
