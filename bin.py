@@ -103,4 +103,6 @@ seventeen = Bin([Outcome('17', 35), black, low, odd, dozen_2, column_2, split141
                  street161718, corner14151718, corner17182021, corner13141617, corner16171920, line131415161718, line161718192021])
 eighteen = Bin([Outcome('18', 35), red, low, even, dozen_2, column_3, split1718, split1518,
                 split1821, street161718, corner14151718, corner17182021, line131415161718, line161718192021])
-nineteen = Bin([Outcome('19', 35), red, high, even, dozen_2, column_1, split1619, ])
+nineteen = Bin([Outcome('19', 35), red, high, odd, dozen_2, column_1, split1619, split1920,
+                split1922, street192021, corner19202223, corner16171920, line161718192021, line192021222324])
+twenty = Bin([Outcome('20', 35), black, high, even, dozen_2, column_2, split])
