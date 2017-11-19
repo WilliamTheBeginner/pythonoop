@@ -103,6 +103,39 @@ seventeen = Bin([Outcome('17', 35), black, low, odd, dozen_2, column_2, split141
                  street161718, corner14151718, corner17182021, corner13141617, corner16171920, line131415161718, line161718192021])
 eighteen = Bin([Outcome('18', 35), red, low, even, dozen_2, column_3, split1718, split1518,
                 split1821, street161718, corner14151718, corner17182021, line131415161718, line161718192021])
-nineteen = Bin([Outcome('19', 35), red, high, odd, dozen_2, column_1, split1619, split1920,
+nineteen = Bin([Outcome('19', 35), black, high, odd, dozen_2, column_1, split1619, split1920,
                 split1922, street192021, corner19202223, corner16171920, line161718192021, line192021222324])
-twenty = Bin([Outcome('20', 35), black, high, even, dozen_2, column_2, split])
+twenty = Bin([Outcome('20', 35), black, high, even, dozen_2, column_2, split1920, split1720, split2021, split2023,
+              corner16171920, corner17182021, corner20212324, corner19202223, street192021, line161718192021, line192021222324])
+twenty_one = Bin([Outcome('21', 35), red, high, odd, dozen_2, column_3, split1821, split2021,
+                  split2124, street192021, corner17182021, corner20212324, line161718192021, line1920222324])
+twenty_two = Bin([Outcome('22', 35), black, high, even, dozen_2, column_1, split1922, split2223,
+                  split2225, street222324, corner19202223, corner22232526, line192021222324, line222324252627])
+twenty_three = Bin([Outcome('23', 35), red, high, odd, dozen_2, column_2, split2023, split2223, split2324, split2326,
+                    street222324, corner19202223, corner22232526, corner23242627, corner20212324, line192021222324, line222324252627])
+twenty_four = Bin([Outcome('24', 35), black, high, even, dozen_2, column_3, split2124, split2324,
+                   split2427, street222324, corner20212324, corner23242627, line192021222324, line222324252627])
+twenty_five = Bin([Outcome('25', 35), red, high, odd, dozen_3, column_1, split2526, split2225,
+                   split2528, street252627, corner22232526, corner25262829, line222324252627, line252627282930])
+twenty_six = Bin([Outcome('26', 35), black, high, even, dozen_3, column_2, split2326, split2526, split2627, split2629,
+                  street252627, corner22232526, corner23242627, corner26272930, corner25262829, line2223242526, line252627282930])
+twenty_seven = Bin([Outcome('27', 35), red, high, odd, dozen_3, column_3, split2427, split2627,
+                    split2730, street252627, corner23242627, corner26272930, line222324252627, line252627282930])
+twenty_eight = Bin([Outcome('28', 35), red, high, even, dozen_3, column_1, split2528, split2829,
+                    split2931, street282930, corner25262829, corner28293132, line252627282930, line282930313233])
+twenty_nine = Bin([Outcome('29', 35), black, high, odd, dozen_3, column_2, split2829, split2629, split2930, split2932,
+                   street282930, corner25262829, corner26272930, corner29303233, corner28293132, line252627282930, line282930313233])
+thirty = Bin([Outcome('30', 35), red, high, even, dozen_3, column_3, split2730, split2930,
+              split3033, street282930, corner26272930, corner29303233, line252627282930, line282930313233])
+thirty_one = Bin([Outcome('31', 35), black, odd, dozen_3, column_1, split2831, split3132,
+                  split3134, street313233, corner28293132, corner31323435, line282930313233, line313233343536])
+thirty_two = Bin([Outcome('32', 35), red, even, dozen_3, column_2, split2932, split3233, split3132, split3235,
+                  street313233, corner29303233, corner28293132, corner32333536, corner31323435, line282930313233, line313233343536])
+thirty_three = Bin([Outcome('33', 35), black, odd, dozen_3, column_3, split3033, split3233,
+                    split3336, street313233, corner29303233, corner32333536, line282930313233, line313233343536])
+thirty_four = Bin([Outcome('34', 35), red, even, dozen_3, column_1, split3134,
+                   split3435, street343536, corner31323435, line313233343536])
+thirty_five = Bin([Outcome('35', 35), black, odd, dozen_3, column_2, split3435, split3235,
+                   split3536, street343536, corner31323435, corner32333536, line313233343536])
+thirty_six = Bin([Outcome('36', 35), red, even, dozen_3, column_3, split3336,
+                  split3536, street343536, corner32333536, line313233343536])
